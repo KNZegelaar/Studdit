@@ -268,8 +268,9 @@ describe('Thread', () => {
                     .end((err, res) => {
                         res.should.have.status(404);
                         res.body.should.have.property('message', 'Niet gevonden (undefined bestaat niet)')
-                        done();
                     })
+                    done();
+
             })
     })
 
